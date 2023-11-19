@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+   <style>
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map-container {
+    position: relative;
+}
+
+#mapFrame {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+.hotspot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+}
+
+.hotspot:hover {
+    background-color: darkred;
+}
+</style>
+</head>
+<body>
+    <div id="map-container">
+        <iframe id="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387051.4305748679!2d-74.25908989999999!3d40.6976701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25903ce155677%3A0xb1ac25a77a1c3e20!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1605211574394!5m2!1sen!2suk" allowfullscreen></iframe>
+        
+        <a href="link1.html" class="hotspot" style="top: 30%; left: 40%;"></a>
+        <a href="link2.html" class="hotspot" style="top: 60%; left: 70%;"></a>
+    </div>
+</body>
+</html>
